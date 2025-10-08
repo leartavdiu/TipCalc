@@ -48,7 +48,7 @@ fun TipCalcLayout() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
-        // Title
+
         Text(
             text = "Calculate Tip",
             modifier = Modifier
@@ -56,7 +56,6 @@ fun TipCalcLayout() {
                 .padding(top = 40.dp, bottom = 16.dp)
         )
 
-        // Tip amount display
         Text(
             text = "Tip Amount: $tip",
             style = MaterialTheme.typography.displaySmall
@@ -64,7 +63,6 @@ fun TipCalcLayout() {
 
         Spacer(Modifier.height(150.dp))
 
-        // Bill amount field
         TextField(
             value = amountInput,
             onValueChange = { amountInput = it },
@@ -75,7 +73,6 @@ fun TipCalcLayout() {
                 .fillMaxWidth()
         )
 
-        // Tip percent field
         TextField(
             value = tipInput,
             onValueChange = { tipInput = it },
@@ -86,7 +83,6 @@ fun TipCalcLayout() {
                 .fillMaxWidth()
         )
 
-        // Round up switch
         Row(
             modifier = Modifier
                 .fillMaxWidth()
